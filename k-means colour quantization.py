@@ -119,11 +119,11 @@ cv2.createTrackbar('K Value','image',3,20,changeK) #k can be 1 - 20 with 3 as th
 
 while(1): #ends when esc is pressed
     if choice == 1:
-        img = cv2.imread("baboon.jpg") 
+        img = cv2.imread(r".\baboon.png") 
     else:
-        img = cv2.imread("SAFlag.jpg") 
+        img = cv2.imread(r".\SAFlag.png") 
 
-    cv2.imshow("image", img) #opens baboon1.png in a new window
+    cv2.imshow("image", img) #opens img in a new window
     
     key = cv2.waitKey(1) & 0xFF
     if key == 27:
